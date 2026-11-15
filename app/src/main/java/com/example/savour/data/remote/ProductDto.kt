@@ -9,6 +9,10 @@ data class SearchResponse(
 )
 
 @Serializable
+data class ProductResponse(
+    val product: ProductDto? = null
+)
+@Serializable
 data class ProductDto(
     val code: String? = null,
     @SerialName("product_name") val productName: String? = null,
