@@ -9,7 +9,7 @@ activityCompose = "1.13.0"
 kotlin = "2.4.21"
 composeBom = "2026.09.00"
 ksp = "2.3.14"
-room = "2.8.5"
+room = "3.0.3"
 retrofit = "2.11.0"
 serializationJson = "1.7.3"
 coil = "2.7.0"
@@ -36,9 +36,8 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 retrofit-serialization = { module = "com.squareup.retrofit2:converter-kotlinx-serialization", version.ref = "retrofit" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-runtime = { module = "androidx.room3:room3-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room3:room3-compiler", version.ref = "room" }
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
 lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleVm" }
 
