@@ -1,7 +1,6 @@
 package com.example.savour
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -13,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.savour.ui.theme.SavourTheme
+import com.example.savour.ui.list.SearchScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,8 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             SavourTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    SearchScreen(
+                        onFoodClick = { /* detail screen comes next */ },
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
